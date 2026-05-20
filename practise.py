@@ -256,7 +256,38 @@
 # print("Variable1:",variable1)
 # print("Variable2:",variable2)
 
-list = [10,20,30,40,50,60,70,80,90,100]
-list[4],list[1] = list[1],list[4]
-print(list)
+# list = [10,20,30,40,50,60,70,80,90,100]
+# list[4],list[1] = list[1],list[4]
+# print(list)
+
+# list = [8,10,6,2,4]
+# count = 0
+# for i in range(len(list)):
+#     for j in range(len(list)-1):
+#         count += 1
+#         if list[j] > list[j+1]:
+#            list[j], list[j+1] = list[j+1], list[j]
+# print(list)
+# print(count)
+
+# my_list = [8,10,6,2,4]
+# swapped = True
+# count = 0
+# while swapped:
+#     swapped = False
+#     for i in range (len(my_list)-1):
+#         count += 1
+#         if my_list[i]>my_list[i+1]:
+#             swapped = True
+#             my_list[i],my_list[i+1] = my_list[i+1],my_list[i]
+# print(my_list)
+# print(count)
+
+my_list = [8,10,6,2,4]
+my_list.sort()
+print(my_list)
+
+
+
+
 
