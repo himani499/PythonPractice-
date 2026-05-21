@@ -283,11 +283,53 @@
 # print(my_list)
 # print(count)
 
-my_list = [8,10,6,2,4]
-my_list.sort()
+# my_list = [8,10,6,2,4]
+# my_list.sort()
+# print(my_list)
+
+# list = [8,10,6,2,4]
+# print(list)
+# list.reverse()
+# print(list)
+
+# list_1 = [1]
+# list_2 = list_1[:]
+# list_1[0] = 2
+# print(list_2)
+# print(list_1)
+
+my_list = [10,8,6,4,2]
+new_list = my_list[1:3]
+print(new_list)
+
+my_list = [10,8,6,4,2]
+new_list = my_list[1:-1]
+print(new_list)
+
+my_list = [10,8,6,4,2]
+new_list = my_list[-1:1]
+print(new_list)
+
+my_list = [10,8,6,4,2]
+new_list = my_list[-5:3]
+print(new_list)
+
+my_list = [10,8,6,4,2]
+new_list = my_list[:3]
+print(new_list)
+
+my_list = [10,8,6,4,2]
+new_list = my_list[2:]
+print(new_list)
+
+my_list = [10,8,6,4,2]
+del my_list[1:3]
+print(my_list)
+del my_list[:]
 print(my_list)
 
-
-
-
+my_list = [0,3,12,8,2]
+print(5 in my_list)
+print(5 not in my_list)
+print(12 in my_list)
 
