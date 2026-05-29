@@ -651,24 +651,81 @@
 # del pol_eng_dictionary
 # print(pol_eng_dictionary)
 
-sd = {}
-while True:
-    name = input("enter student's name:")
-    if name == "":
-        break
-    score = int(input(f"enter {name}'s score:"))
-    if score not in range(1,11):
-        break
-    if name in sd:
-        sd[name] += (score, )
-    else:
-        sd[name] = (score, )
-print(sd)
-for name, mark in sd.items():
-    sum = 0
-    for m in mark:
-        sum += m
-        print(name,"->",sum/len(mark))
+# sd = {}
+# while True:
+#     name = input("enter student's name:")
+#     if name == "":
+#         break
+#     score = int(input(f"enter {name}'s score:"))
+#     if score not in range(1,11):
+#         break
+#     if name in sd:
+#         sd[name] += (score, )
+#     else:
+#         sd[name] = (score, )
+# print(sd)
+# for name, mark in sd.items():
+#     sum = 0
+#     for m in mark:
+#         sum += m
+#         print(name,"->",sum/len(mark))
+
+# class ThisIsMyFirstClass:
+#     name = "himani"
+#     age = 20
+#     def getName(self):
+#         print(self.name)
+# firstobject = ThisIsMyFirstClass()
+# print(firstobject) 
+# firstobject.getName()
+# print(firstobject.name)
+
+# class student:
+#     def _init_(self):
+#         self.name = ""
+#         self.age = 0
+#         self.gender = ""
+#         self.grade = ""
+# himani = student()
+# print(himani)
+
+# himani.name = "himani sabre"
+# himani.age = 20
+# himani.gender = "female"
+# himani.grade = "12th"
+
+# print(himani.name)
+# print(himani.age)
+# print(himani.gender)
+# print(himani.grade)
+
+class student:
+    def __init__(self,name,age,gender,grade):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.grade = grade
+    def printDetails(self):
+        print("name:", self.name)
+        print("age:", self.age)
+        print("gender:", self.gender)
+        print("grade:", self.grade)
+himani = student("himani sabre",20,"female","12th")
+print(himani)
+himani.printDetails()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
