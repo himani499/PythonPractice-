@@ -774,30 +774,317 @@
 # print(obj.subVar) 
 # print(obj.supVar)
 
-class Level1:
-    variable_1 = 100
-    def __init__(self):
-       self.var_1 = 101
-    def fun_1(self):
-       return 102
-class Level2(Level1):
-    variable_2 = 200
-    def __init__(self):
-       super().__init__()
-       self.var_2 = 201
-    def fun_2(self):
-       return 
-class Level3(Level2):
-    variable_3 = 300
-    def __init__(self):
-       super().__init__()
-       self.var_3 = 301
-    def fun_3(self):
-        return 
-obj = Level3()
-print(obj.variable_1, obj.var_1, obj.fun_1())
-print(obj.variable_2, obj.var_2, obj.fun_2()) 
-print(obj.variable_3, obj.var_3, obj.fun_3())
+# class Level1:
+#     variable_1 = 100
+#     def __init__(self):
+#        self.var_1 = 101
+#     def fun_1(self):
+#        return 102
+# class Level2(Level1):
+#     variable_2 = 200
+#     def __init__(self):
+#        super().__init__()
+#        self.var_2 = 201
+#     def fun_2(self):
+#        return 
+# class Level3(Level2):
+#     variable_3 = 300
+#     def __init__(self):
+#        super().__init__()
+#        self.var_3 = 301
+#     def fun_3(self):
+#         return 
+# obj = Level3()
+# print(obj.variable_1, obj.var_1, obj.fun_1())
+# print(obj.variable_2, obj.var_2, obj.fun_2()) 
+# print(obj.variable_3, obj.var_3, obj.fun_3())
+
+# class exampleclass:
+#     counter = 0
+#     def __init__(self, val = 1):
+#         self.__first = val
+#         exampleclass.counter += 1
+# example_object_1 = exampleclass()
+# example_object_2 = exampleclass(2)
+# example_object_3 = exampleclass(4)
+
+# print(example_object_1.__dict__,example_object_1.counter)
+# print(example_object_2.__dict__,example_object_2.counter)
+# print(example_object_3.__dict__,example_object_3.counter)
+
+# class ExampleClass:
+#   def __init__(self, val):
+#     if val % 2 != 0:
+#        self.a = 1
+#     else:
+#        self.b = 1
+# example_object = ExampleClass(1)
+# print(example_object.a)
+# print(example_object.b)
+
+# class ExampleClass:
+#   def __init__(self, val):
+#     if val % 2 != 0:
+#        self.a = 1
+#     else:
+#        self.b = 1
+# example_object = ExampleClass(2)
+# try:
+#    print("a =", example_object.a)
+# except AttributeError:
+#     try:
+#         print("b =", example_object.b)
+#     except AttributeError:
+#         print("the eroror has ocurred")
+
+# class ExampleClass:
+#   def __init__(self, val):
+#     if val % 2 != 0:
+#        self.a = 1
+#     else:
+#        self.b = 1
+# example_object = ExampleClass(1)
+# if hasattr(example_object, 'a'):
+#  print("a =",example_object.a)
+# if hasattr(example_object, 'b'):
+#  print("b =",example_object.b)
+
+# class ExampleClass:
+#  a = 1
+#  def __init__(self):
+#      self.b = 2
+# example_object = ExampleClass()
+# print(hasattr(example_object, 'b'))
+# print(hasattr(example_object, 'a'))
+# print(hasattr(ExampleClass, 'b'))
+# print(hasattr(ExampleClass, 'a'))
+
+# class python:
+#     population = 1
+#     victims = 0
+#     def __init__(self):
+#         self.length_ft = 3
+#         self._vanomous = False
+# myobj = python()
+# print("myobj.population:",myobj.population)
+# print("myobj.victims:",myobj.victims)
+# print("myobj.length_ft:",myobj.length_ft)
+
+# class python:
+#     population = 1
+#     victims = 0
+#     def __init__(self):
+#         self.length_ft = 3
+#         self._venomous = False
+# myobj = python()
+# print("myobj.population:",myobj.population)
+# print("myobj.victims:",myobj.victims)
+# print("myobj.length_ft:",myobj.length_ft)
+# print("myobj._venomous:",myobj._venomous)
+
+# class Classy:
+#     def visible(self):
+#         print("visible")
+
+#     def __hidden(self):
+#         print("hidden")
+# obj = Classy()
+# obj.visible() 
+# try:
+#     obj.__hidden() 
+# except:
+#     print("failed") 
+# obj._Classy__hidden()
+# obj = Classy()
+# print(type(obj))
+# print(type(obj).__name__)
+
+# class Vehicle:
+#     pass
+# class LandVehicle(Vehicle):
+#     pass
+# class TrackedVehicle(LandVehicle):
+#     pass
+# my_vehicle = Vehicle()
+# my_land_vehicle = LandVehicle()
+# my_tracked_vehicle = TrackedVehicle()
+# for obj in [my_vehicle, my_land_vehicle, my_tracked_vehicle]:
+#     for cls in [Vehicle, LandVehicle, TrackedVehicle]:
+#         print(isinstance(obj, cls), end="\t")
+#     print()
+
+# class SampleClass:
+#     def __init__(self, val):
+#         self.val = val
+# object_1 = SampleClass(0)
+# object_2 = SampleClass(2)
+# object_3 = object_1
+# object_3.val += 1
+# print(object_1 is object_2)
+# print(object_2 is object_3)
+# print(object_3 is object_1)
+# print(object_1.val, object_2.val, object_3.val)
+# string_1 = "Mary had a little "
+# string_2 = "Mary had a little lamb"
+# string_1 += "lamb"
+# print(string_1 == string_2, string_1 is string_2)
+
+# class super:
+#     def __init__(self, name):
+#         self.name = name
+#     def __str__(self):
+#         return "my name is" + self.name + "."
+# class sub(super):
+#     def __init__(self, name):
+#         pass
+#         super.__init__(self, name)
+# obj = sub("Andy")   
+# print(obj)
+
+# class Super:
+#     def __init__(self, name):
+#         self.name = name
+#     def __str__(self):
+#         return "my name is " + self.name + "."
+# class Sub(Super):
+#     def __init__(self, name):
+#         super().__init__(name)
+# obj = Sub("Andy")   
+# print(obj)
+
+# class SuperA:
+#     var_a = 10
+#     def fun_a(self):
+#         return 11
+# class SuperB:
+#     var_b = 20
+#     def fun_b(self):
+#         return 21
+# class Sub(SuperA, SuperB):
+#     pass
+# obj = Sub()
+# print(obj.var_a, obj.fun_a())
+# print(obj.var_b, obj.fun_b())
+
+# class  level1:
+#     var = 100
+#     def fun(self):
+#         return 101
+# class level2(level1):
+#     var = 200
+#     def fun(self):
+#         return 201
+# class level3(level2):
+#     pass
+# obj = level3()
+# print(obj.var, obj.fun())
+
+# class Left:
+#     var = "L"
+#     var_left = "LL"
+#     def fun (self):
+#         return "Left"
+# class Right:
+#     var = "R"
+#     var_right = "RR"
+#     def fun (self):
+#         return "Right"
+# class Sub(Left,Right):
+#     pass
+# obj = Sub()
+# print(obj.var, obj.var_left, obj.var_right, obj.fun())
+
+
+# class One:
+#     def do_it(self):
+#         print("do_it from One")
+#     def doAnything(self):
+#         self.do_it()
+# class Two(One):
+#     def do_it(self):
+#         print("do_it from Two")  
+# one = One() 
+# two = Two()  
+# one.doAnything()
+# two.doAnything()
+
+# def reciprocal(n):
+#     try:
+#         n = 1/n
+#     except ZeroDivisionError:
+#         print("division failed")
+#         return None
+#     else:
+#         print("everything went fine")
+#         return n
+# print("reciprocal(2):", reciprocal(2))  
+# print("reciprocal(0):", reciprocal(0))
+
+# def reciprocal(n):
+#     try:
+#         n = 1/n
+#     except ZeroDivisionError:
+#         print("division failed")
+#         n = None
+#     else:
+#         print("everything went fine")
+#     finally:
+#         print("It's time to say goodbye")  
+#     return n  
+# print("reciprocal(2):", reciprocal(2))  
+# print("reciprocal(0):", reciprocal(0)) 
+
+# try:
+#     i = int("Hello!")
+# except Exception as e:
+#     print(e) 
+#     print(e.__str__())   
+
+class MyZeroDivisionError(ZeroDivisionError):
+    pass
+def do_the_division(mine):
+    if mine:
+        raise MyZeroDivisionError("some worse news")
+    else:
+        raise ZeroDivisionError("some bad news")
+do_the_division(False)    
+    
+
+
+
+
+
+     
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         
     
