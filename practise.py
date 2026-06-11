@@ -1110,15 +1110,51 @@
 # price, gst = 500, 0.18
 # print(f'price:Rs.{price}|GST:Rs.{price*gst:.2f}|Total:Rs.{price*(1+gst):.2f}')
 
-string  = "Hello, How are you doing today?"
-count = 0
-for vowel in string:
-    if vowel.lower() in "aeiou":
-        count += 1
-print("number of vowels:", count)
-print(string.find('you'))
-print(string[15:18])
-print(string[::-1])
+# string  = "Hello, How are you doing today?"
+# count = 0
+# for vowel in string:
+#     if vowel.lower() in "aeiou":
+#         count += 1
+# print("number of vowels:", count)
+# print(string.find('you'))
+# print(string[15:18])
+# print(string[::-1])
+
+# non_palin, palin = "abcdef", "axttxa"
+
+# with open("data.txt", "r") as file:
+#     data = file.read()
+# print(data)
+
+# with open('students.txt', 'w') as f:
+#     f.write('Rahul Sharma,85,Bhopal\n')
+#     f.write('Priya Verma,92,Indore\n')
+#     f.write('Amit Kumar,73,Jabalpur\n')
+
+# with open('students.txt', 'a') as f:
+#     f.write('Sneha Joshi,88,Bhopal\n')
+
+# with open('students.txt', 'r') as f:
+#     content = f.read()
+# print(content)
+
+# with open('students.txt', 'r') as f:
+#     for line in f:
+#         name, marks, city = line.strip().split(',')
+#         print(f'{name:<15}|{marks:>5}|{city}')
+#         print("---------------")
+
+
+import csv
+records = [
+    ['Name','Marks','City','Grade'],
+    ['Rahul','85','Bhopal','B'],
+    ['Priya','92','Indore','A'],
+    ['Amit','73','Jabalpur','B'],
+]
+with open('students.csv','w',newline='') as f:
+    csv.writer(f).writerows(records)
+
 
 
 
