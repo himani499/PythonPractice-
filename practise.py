@@ -1145,15 +1145,108 @@
 #         print("---------------")
 
 
-import csv
-records = [
-    ['Name','Marks','City','Grade'],
-    ['Rahul','85','Bhopal','B'],
-    ['Priya','92','Indore','A'],
-    ['Amit','73','Jabalpur','B'],
-]
-with open('students.csv','w',newline='') as f:
-    csv.writer(f).writerows(records)
+# import csv
+# records = [
+#     ['Name','Marks','City','Grade'],
+#     ['Rahul','85','Bhopal','B'],
+#     ['Priya','92','Indore','A'],
+#     ['Amit','73','Jabalpur','B'],
+# ]
+# with open('students.csv','w',newline='') as f:
+#     csv.writer(f).writerows(records)
+
+# with open('students.csv','r') as f:
+#     for row in csv.DictReader(f):
+#         print(f'{row["Name"]}: {row["Marks"]} marks({row["City"]})')
+
+# import csv
+# records = [
+
+#     ['Name','Age','Marks'],
+#     ['Himani','20','85'],
+#     ['Kuhu','30','90'],
+#     ['Krati','25','70'],
+# ]
+# with open('students.csv','w',newline='') as f:
+#     csv.writer(f).writerows(records)
+
+# import csv
+# search_name = input("Enter student name: ")
+# with open("students.csv", "r") as file:
+#     reader = csv.DictReader(file)
+#     found = False
+#     for row in reader:
+#         if row["Name"].lower() == search_name.lower():
+#             print("Student Found!")
+#             print("Name :", row["Name"])
+#             print("Age :", row["Age"])
+#             print("Marks :", row["Marks"])
+#             found = True
+#             break
+#     if not found:
+#         print("Student Not Found")
+
+import numpy as np
+# arr1d = np.array([1,2,3,4])
+# arr2d = np.array([[85,90,78],[72,88,95],[91,76,83]])
+# print(arr2d.shape)
+# print(arr2d.dtype)
+# print(arr2d.ndim)
+
+# zeros = np.zeros((3,4))
+# print(zeros)
+# ones = np.ones((2,5))
+# print(ones)
+# rng = np.arange(0,50,5)
+# print(rng)
+# lin = np.linspace(0,1,11)
+# print(lin)
+# random = np.random.randint(40,100,(5,3))
+# print(random)
+
+# arr = np.array([10,20,30,40,50,])
+# print(arr*2)
+# print(arr+2)
+# print(arr**2)
+
+# marks_2d = np.array([[85,90,78],[72,88,95],[91,76,83]])
+# print(np.mean(marks_2d))
+# print(np.mean(marks_2d, axis=1))
+# print(np.mean(marks_2d, axis=0))
+# print(np.max(marks_2d))
+# print(np.std(marks_2d))
+
+# arr = np.array([55,82,43,91,67,78,35,88])
+# print(arr[arr>70])
+
+import pandas as pd
+data = {
+    'Name': ['Himani','kuhu','rashi','krati','vini'],
+    'Age':  [20,21,25,26,30],
+    'Marks':  [90,85,70,97,65],
+    'City':  ['Indore','Bhopal','Jabalpur','Delhi','Betul'],
+}
+df = pd.DataFrame(data)
+print(df)
+print(df.shape)
+print(df.head(3))
+print(df.shape)
+print(df.dtypes)
+print(df.describe())
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
 
 
 
